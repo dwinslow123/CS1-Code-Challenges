@@ -7,3 +7,6 @@
  * Returns: 'aeiou'
 */
 
+const commonChars = (str1, str2) => {
+  forEach()
+}

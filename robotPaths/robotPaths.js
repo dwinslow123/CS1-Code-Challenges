@@ -29,4 +29,3 @@ const makeBoard = (n) => {
   return board;
 };
 
-// write your code here for t

@@ -1,0 +1,17 @@
+{
+  "name": "fizzbuzztesting",
+  "version": "1.0.0",
+  "description": "TDD",
+  "main": "fizzBuzz.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest -- watch"
+  },
+  "author": "dwinslow123",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^20.0.4"
+  }
+}
