@@ -11,5 +11,17 @@
  *                   */
 
 const rockPaperScissors = () => {
-	// TODO: your solution here
+  const answer = [];
+  const choice = ['rock', 'paper', 'scissors'];
+  for (let i = 0; i < choice.length; i++) {
+    for (let j = 0; j < choice.length; j++) {
+      for (let k = 0; k < choice.length; k++) {
+        answer.push([choice[i], choice[j], choice[k]]);
+      }
+    }
+  }
+  return answer;
 };
+
+
+console.log(rockPaperScissors());

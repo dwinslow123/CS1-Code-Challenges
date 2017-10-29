@@ -20,27 +20,27 @@
 
 const foods = ['pineapple', 'mango', 'ribeye', 'curry', 'tacos', 'ribeye', 'mango'];
 
-firstItem(foods, (firstItem) => {
-  console.log(`The first item is ${firstItem}.`);
+const firstItem = (foods, cb => {
+  return cb(foods[0]);
 });
 
 // Write a function called getLength that passes the length of the array into the callback
 
-getLength(foods, (length) => {
-  console.log(`The length of the array is ${length}.`);
+const getLength = (foods, cb) => {
+  return cb(foods.length)
 });
 
 // Write a function called last which passes the last item of the array into the callback
 
-last(foods, (lastItem) => {
-  console.log(`The last item in the array is ${lastItem}.`);
+const last = (foods, cb) => {
+  return cb(foods.pop());
 });
 
 // Write a function called sumNums that adds two numbers and passes the result to the callback
 
 
-sumNums(5, 10, (sum) => {
-  console.log(`The sum is ${sum}.`);
+const sumNums = (x, y, cb) => {
+  return cb(a + b);
 });
 
 // Write a function called multiplyNums that adds two numbers and passes the result to the callback

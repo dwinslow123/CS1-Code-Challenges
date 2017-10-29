@@ -4,13 +4,13 @@
  */
 
 const vowelCount = (str) => {
-  let counter = null;
-  splitString = str.split('');
-  splitString.forEach((e, i) => {
-    if (splitString[i] === 'a' || splitString[i] === 'e' || splitString[i] === 'i' || splitString[i] === 'o' || splitString[i] === 'u')
-      counter++;
-  });
+  let counter = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === ('a') || str[i] === 'e' || str[i] === 'i' || str[i] === 'o' || str[i] === 'u') {
+      counter++
+    }
+  }
   return counter;
 }
 
-vowelCount('Hello World!');
+console.log(vowelCount('Hello World!'));

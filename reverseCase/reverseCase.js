@@ -5,12 +5,15 @@
  */
 
 const reverseCase = (str) => {
-  str.forEach(element => {
-    if (str[element] === str[element].toUpperCase()) {
-      return str[element].toLowerCase();
-    } else if (str[element] === str[element].toLowerCase()) {
-      return str[element].toUpperCase;
+  let reversed = ''
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === str[i].toLowerCase()) {
+      reversed += str[i].toUpperCase();
+    } else if (str[i] === str[i].toUpperCase()) {
+      reversed += str[i].toLowerCase();
     }
-  })
-  return str;
+  }
+  return reversed;
 }
+
+console.log(reverseCase('Hello World'));
